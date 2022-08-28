@@ -1,0 +1,43 @@
+<html>
+<head>
+<script>
+var no_of_tickets;
+const ticket_cost=150;
+var total_cost=0;
+var discount;
+var final_cost;
+no_of_tickets=parseInt(window.prompt("enter no_of_tickets","0"));
+
+if (no_of_tickets>=6  && no_of_tickets<=0)
+{
+window.alert("Booking is not allowed ");
+}
+else if (no_of_tickets>=1  &&  no_of_tickets<=2)
+{
+total_cost= no_of_tickets*ticket_cost;
+document.write(total tickets cost:"+total_cost);
+}
+else
+{
+document.write("<h2 style='color:red'>");
+document.write("no_of_tickets:"+no_of_tickets);
+document.write("</h2>");
+document.write("<br>");
+otal_cost= no_of_tickets*ticket_cost;
+document.write("<h3 style='color:blue'>");
+document.write("actual cost:"+total_cost);
+document.write("</h3>");
+document.write("<br>");
+discount=total_cost*0.05;
+document.write("<h3 style='color:green'>");
+document.write("discount obtained:"+discount);
+document.write("</h3>");
+document.write("<br>");
+final_cost=total_cost - discount;
+document.write("<h3 style='color:blue'>");
+document.write("final tickets cost:"+final_cost);
+document.write("</h3>");
+}
+</script>
+</head>
+</html>
