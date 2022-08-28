@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+var n,p,f;
+n=parseInt(window.prompt("Enter no of tickets"));
+if(n>=6){
+document.write("Cannot book tickets");
+}
+else{
+if((n==0) || (n==1) || (n==2)){
+p=(n*150);
+document.write("Total price is:"+p);
+}
+else {
+if((n==4) || (n==5) || (n==6)){
+p=((n*150)*0.1);
+document.write("Total price with discount is:"+p);
+}
+}
+
+}
+</script>
+</body>
+</html>
